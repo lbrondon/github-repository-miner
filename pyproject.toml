@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github-repository-miner"
+version = "0.4.0"
+description = "Clone large GitHub and GitLab repository lists with checkpoints."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Lucas Rondon"}
+]
+dependencies = []
+
+[tool.setuptools]
+package-dir = {"" = "source"}
+py-modules = [
+    "config",
+    "exceptions",
+    "git_repository_cloner",
+    "main",
+    "mining_result",
+    "mining_service",
+    "mining_state",
+    "ports",
+    "repository",
+    "repository_list_reader",
+]
